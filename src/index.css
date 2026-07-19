@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Custom smooth transitions and animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom scrollbar styling for a kid-friendly look */
+#kids-songs-scroll-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+#kids-songs-scroll-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#kids-songs-scroll-panel::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+#kids-songs-scroll-panel::-webkit-scrollbar-thumb:hover {
+  background: #a78bfa;
+}
+
+.dark #kids-songs-scroll-panel::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+.dark #kids-songs-scroll-panel::-webkit-scrollbar-thumb:hover {
+  background: #6d28d9;
+}

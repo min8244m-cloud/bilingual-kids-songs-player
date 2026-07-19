@@ -1,0 +1,6 @@
+{
+  "name": "Bilingual Kids Songs Player",
+  "description": "A delightful bilingual (Myanmar/English) kids songs web application. Play video songs from Google Drive or other links, toggle dark/light theme, and manage a custom playlist using a password-protected admin portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
